@@ -19,15 +19,15 @@
 
 ### Compilation
 
-Compile with `gcc` and optionally set a custom `BUFFER_SIZE`:
+Compile with `cc` and optionally set a custom `BUFFER_SIZE`:
 
 ```bash
 # Default BUFFER_SIZE (1024)
-gcc -Wall -Wextra -Werror -o gnl_test \
+cc -Wall -Wextra -Werror -o gnl_test \
     main.c get_next_line.c get_next_line_utils.c
 
 # Custom BUFFER_SIZE
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 -o gnl_test \
+cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 -o gnl_test \
     main.c get_next_line.c get_next_line_utils.c
 ```
 
